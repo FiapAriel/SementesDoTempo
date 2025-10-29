@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="44" viewBox="0 0 360 88" aria-label="Sementes do Tempo logo">
+  <rect width="360" height="88" fill="none"/>
+  <path d="M40 70 C 80 20, 160 20, 200 70" fill="none" stroke="#7B6B43" stroke-width="6" stroke-linecap="round"/>
+  <path d="M200 70 C 240 20, 320 20, 360 70" fill="none" stroke="#2E7D32" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="200" cy="70" rx="9" ry="6" fill="#D7C89E"/>
+  <ellipse cx="40" cy="70" rx="9" ry="6" fill="#D7C89E"/>
+  <ellipse cx="360" cy="70" rx="9" ry="6" fill="#D7C89E"/>
+  <text x="10" y="28" font-size="24" font-family="Poppins, Arial, sans-serif" fill="#7B6B43" font-weight="600">Sementes do Tempo</text>
+  <text x="12" y="48" font-size="14" font-family="Inter, Arial, sans-serif" fill="#333333">O ontem ensina, o amanhã floresce.</text>
+</svg>

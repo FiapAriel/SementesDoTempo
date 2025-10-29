@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seja Voluntário — Sementes do Tempo</title>
+  <meta name="description" content="Faça sua inscrição para voluntariado intergeracional." />
+  <meta name="keywords" content="idosos, crianças, voluntariado, bem-estar, convivência intergeracional, ONG" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Sementes do Tempo" />
+  <meta property="og:description" content="O ontem ensina, o amanhã floresce." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-image.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-header" role="banner">
+  <div class="container topbar">
+    <a class="brand" href="index.html" aria-label="Página inicial Sementes do Tempo">
+      <img src="assets/img/logo.svg" alt="Logo Sementes do Tempo" />
+      <span class="name">Sementes do Tempo</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <ul>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="voluntario.html" class="btn btn-primary" aria-label="Seja voluntário ou voluntária">Seja voluntário(a)</a></li>
+        <li><a href="doar.html">Doar</a></li>
+        <li><a href="historias.html">Histórias</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" class="container" role="main">
+
+<section class="section">
+  <h2>Seja Voluntário(a)</h2>
+  <p class="lead">Doe tempo, carinho e presença.</p>
+  <ol>
+    <li>Inscrição</li>
+    <li>Capacitação breve</li>
+    <li>Acompanhamento nas atividades</li>
+  </ol>
+
+  <div id="voluntario-success" class="success" role="status" aria-live="polite" hidden>
+    Obrigado! Em até 5 dias úteis, retornaremos com os próximos passos da capacitação.
+  </div>
+
+  <form id="voluntario-form" class="form" novalidate>
+    <div class="row two">
+      <div>
+        <label for="v-nome">Nome completo*</label>
+        <input id="v-nome" name="nome" type="text" required />
+      </div>
+      <div>
+        <label for="v-email">E-mail*</label>
+        <input id="v-email" name="email" type="email" required />
+      </div>
+    </div>
+    <div class="row two">
+      <div>
+        <label for="v-tel">Telefone (WhatsApp)*</label>
+        <input id="v-tel" name="telefone" type="tel" placeholder="(11) 90000-0000" required />
+      </div>
+      <div>
+        <label for="v-cidade">Cidade/UF*</label>
+        <input id="v-cidade" name="cidade" type="text" required />
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="v-dispo">Faixa de disponibilidade (dias/horários)*</label>
+        <input id="v-dispo" name="disponibilidade" type="text" required />
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="v-area">Áreas de interesse*</label>
+        <select id="v-area" name="area" required>
+          <option value="">Selecione…</option>
+          <option>Memórias Vivas</option>
+          <option>Brincar & Cuidar</option>
+          <option>Movimento & Bem-Estar</option>
+          <option>Conexão Digital</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="v-exp">Experiências relevantes (texto curto)</label>
+        <textarea id="v-exp" name="experiencias" rows="4" placeholder="Conte rapidamente suas experiências com trabalho social, idosos, crianças etc."></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" required /> Aceito o Termo de Voluntariado*</label>
+      <label><input type="checkbox" required /> Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>*</label>
+    </div>
+    <button class="btn btn-primary" type="submit">Enviar inscrição</button>
+  </form>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/img/logo.svg" alt="Logo Sementes do Tempo" style="height:38px"/>
+      <p class="small">Conectamos idosos e crianças por meio de atividades de convivência, cultura e bem-estar.</p>
+    </div>
+    <nav aria-label="Links rápidos">
+      <strong>Links</strong><br/>
+      <a href="sobre.html">Sobre</a> • <a href="projetos.html">Projetos</a> • <a href="voluntario.html">Voluntário</a><br/>
+      <a href="doar.html">Doar</a> • <a href="contato.html">Contato</a> • <a href="privacidade.html">Política</a>
+    </nav>
+    <div>
+      <strong>Contato</strong>
+      <p class="small">contato@sementesdotempo.org.br<br/>(11) 4002-8922</p>
+    </div>
+  </div>
+  <hr class="soft"/>
+  <div class="container small">© 2025 Sementes do Tempo — O ontem ensina, o amanhã floresce.</div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
