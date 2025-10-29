@@ -117,3 +117,49 @@ input[type="checkbox"] { transform: scale(1.2); margin-right: 8px; }
   aspect-ratio: 16 / 9;   /* reserva o espaço ANTES do vídeo carregar */
 }
 .video-grid figcaption.small { margin-top: 8px; }
+
+/* Cabeçalho realmente full-width e com respiro lateral fluido */
+header.site-header { left: 0; right: 0; width: 100%; }
+header.site-header .topbar { 
+  padding: 12px clamp(12px, 4vw, 32px);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+/* No header, não limitar pelo .container global */
+header.site-header .container { width: 100%; max-width: none; margin: 0; }
+
+/* Navegação flexível (quebra linha quando precisa) */
+nav.primary-nav ul { 
+  display: flex; flex-wrap: wrap; 
+  gap: clamp(8px, 2vw, 18px); 
+  padding: 0; margin: 0; list-style: none;
+  justify-content: flex-end;
+}
+@media (max-width: 900px) {
+  nav.primary-nav ul { justify-content: flex-start; }
+  nav.primary-nav a { padding: 10px 12px; }
+}
+
+/* Imagens e vídeos fluidos em telas pequenas */
+img, video { max-width: 100%; height: auto; }
+
+/* Hero sem fundo cinza (se sobrou algum inline, isso neutraliza) */
+.hero { background: transparent !important; }
+
+/* Hero e tipografia ajustados no mobile */
+@media (max-width: 700px) {
+  .hero { padding: 48px 0; }
+  .hero .title { font-size: clamp(28px, 8vw, 40px); }
+  .hero .subtitle { font-size: clamp(16px, 4.5vw, 18px); }
+}
+
+/* Vídeos do mesmo tamanho com proporção fixa 16:9 */
+.video-grid { display: grid; gap: 18px; grid-template-columns: 1fr; }
+@media (min-width: 900px) { .video-grid { grid-template-columns: 1fr 1fr; } }
+.video-grid .card .content { display: flex; flex-direction: column; }
+.video-wrap { position: relative; width: 100%; padding-top: 56.25%; border-radius: 12px; overflow: hidden; background: #000; }
+.video-wrap video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* Teaser e resumo dos relatos (padrão 'Ver relato completo') */
+.relato-teaser { margin: 0 0 8px; }
+.card .content details summary { cursor: pointer; font-weight: 600; list-style: none; }
+.card .content details[open] summary { margin-bottom: 6px; }
