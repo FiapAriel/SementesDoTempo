@@ -15,6 +15,60 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    /* Estilos para a lista de passos e áreas de atuação */
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      counter-reset: step-counter;
+      display: grid;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .steps-list li {
+      position: relative;
+      padding-left: 3.5rem;
+    }
+    .steps-list li::before {
+      counter-increment: step-counter;
+      content: counter(step-counter);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: var(--color-primary, #4CAF50); /* Usa a cor primária ou verde padrão */
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 2.5rem;
+      font-weight: bold;
+    }
+    .steps-list h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .area-card {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--color-primary, #4CAF50);
+    }
+    .cta-container {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 2rem;
+      background-color: #e8f5e9;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -41,68 +95,53 @@
 
 <section class="section">
   <h2>Seja Voluntário(a)</h2>
-  <p class="lead">Doe tempo, carinho e presença.</p>
-  <ol>
-    <li>Inscrição</li>
-    <li>Capacitação breve</li>
-    <li>Acompanhamento nas atividades</li>
+  <p class="lead">Doe tempo, carinho e presença. Sua participação pode transformar vidas.</p>
+  
+  <p>Para se tornar um voluntário, não é necessário ter experiência prévia, apenas vontade de ajudar e disponibilidade para participar das capacitações.</p>
+
+  <h3>Como funciona o processo?</h3>
+  <ol class="steps-list">
+    <li>
+      <h3>Manifestação de Interesse</h3>
+      <p>Entre em contato conosco ou visite nossa sede para conhecer o projeto de perto.</p>
+    </li>
+    <li>
+      <h3>Capacitação Breve</h3>
+      <p>Participe de um encontro introdutório para entender nossas dinâmicas e cuidados essenciais.</p>
+    </li>
+    <li>
+      <h3>Ação!</h3>
+      <p>Integre-se às atividades acompanhado por nossa equipe e comece a criar laços.</p>
+    </li>
   </ol>
 
-  <div id="voluntario-success" class="success" role="status" aria-live="polite" hidden>
-    Obrigado! Em até 5 dias úteis, retornaremos com os próximos passos da capacitação.
+  <h3>Áreas de Atuação</h3>
+  <div class="areas-grid">
+    <div class="area-card">
+      <strong>Memórias Vivas</strong>
+      <p>Escuta ativa e registro de histórias de vida dos idosos.</p>
+    </div>
+    <div class="area-card">
+      <strong>Brincar & Cuidar</strong>
+      <p>Atividades lúdicas integrando crianças e idosos.</p>
+    </div>
+    <div class="area-card">
+      <strong>Movimento & Bem-Estar</strong>
+      <p>Auxílio em caminhadas, dança e exercícios leves.</p>
+    </div>
+    <div class="area-card">
+      <strong>Conexão Digital</strong>
+      <p>Ensino de tecnologia básica (celular, tablets) para a terceira idade.</p>
+    </div>
   </div>
 
-  <form id="voluntario-form" class="form" novalidate>
-    <div class="row two">
-      <div>
-        <label for="v-nome">Nome completo*</label>
-        <input id="v-nome" name="nome" type="text" required />
-      </div>
-      <div>
-        <label for="v-email">E-mail*</label>
-        <input id="v-email" name="email" type="email" required />
-      </div>
-    </div>
-    <div class="row two">
-      <div>
-        <label for="v-tel">Telefone (WhatsApp)*</label>
-        <input id="v-tel" name="telefone" type="tel" placeholder="(11) 90000-0000" required />
-      </div>
-      <div>
-        <label for="v-cidade">Cidade/UF*</label>
-        <input id="v-cidade" name="cidade" type="text" required />
-      </div>
-    </div>
-    <div class="row">
-      <div>
-        <label for="v-dispo">Faixa de disponibilidade (dias/horários)*</label>
-        <input id="v-dispo" name="disponibilidade" type="text" required />
-      </div>
-    </div>
-    <div class="row">
-      <div>
-        <label for="v-area">Áreas de interesse*</label>
-        <select id="v-area" name="area" required>
-          <option value="">Selecione…</option>
-          <option>Memórias Vivas</option>
-          <option>Brincar & Cuidar</option>
-          <option>Movimento & Bem-Estar</option>
-          <option>Conexão Digital</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div>
-        <label for="v-exp">Experiências relevantes (texto curto)</label>
-        <textarea id="v-exp" name="experiencias" rows="4" placeholder="Conte rapidamente suas experiências com trabalho social, idosos, crianças etc."></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <label><input type="checkbox" required /> Aceito o Termo de Voluntariado*</label>
-      <label><input type="checkbox" required /> Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>*</label>
-    </div>
-    <button class="btn btn-primary" type="submit">Enviar inscrição</button>
-  </form>
+  <div class="cta-container">
+    <h3>Quer fazer parte dessa história?</h3>
+    <p>Venha nos visitar no <strong>Colégio Carpe Diem Objetivo</strong> ou fale com a gente.</p>
+    <br>
+    <a href="contato.html" class="btn btn-primary">Entrar em Contato</a>
+  </div>
+
 </section>
 
 </main>
