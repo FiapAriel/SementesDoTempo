@@ -15,6 +15,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    /* CSS Específico para esta página de contato sem formulário */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (min-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .contact-card {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+    .contact-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .map-container {
+      margin-top: 3rem;
+      width: 100%;
+      height: 400px;
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -40,39 +77,50 @@
 <main id="conteudo" class="container" role="main">
 
 <section class="section">
-  <h2>Contato</h2>
-  <p>E-mail: <a href="mailto:contato@sementesdotempo.org.br">contato@sementesdotempo.org.br</a><br/>
-  Telefone/WhatsApp: <a href="tel:+551140028922">(11) 4002-8922</a></p>
+  <h2>Fale Conosco</h2>
+  <p>Tem dúvidas sobre como participar ou apoiar o projeto? Entre em contato diretamente através dos nossos canais oficiais ou venha nos visitar.</p>
 
-  <div id="contato-success" class="success" role="status" aria-live="polite" hidden>
-    Mensagem enviada! Retornaremos em breve.
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Canais de Atendimento</h3>
+      <p>Nossa equipe está disponível de segunda a sexta, das 9h às 18h.</p>
+      <ul style="list-style: none; padding: 0; line-height: 2;">
+        <li>
+          <strong>E-mail:</strong><br>
+          <a href="mailto:contato@sementesdotempo.org.br">contato@sementesdotempo.org.br</a>
+        </li>
+        <li style="margin-top: 1rem;">
+          <strong>Telefone e WhatsApp:</strong><br>
+          <a href="tel:+551140028922">(11) 4002-8922</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact-card">
+      <h3>Onde Estamos</h3>
+      <p>Sede da ONG Sementes do Tempo:</p>
+      <address style="font-style: normal; line-height: 1.6;">
+        <strong>Colégio Carpe Diem Objetivo</strong><br>
+        R. João Antônio de Oliveira, 1007<br>
+        Mooca, São Paulo - SP<br>
+        CEP: 03111-001
+      </address>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+        <em>Visitas mediante agendamento prévio.</em>
+      </p>
+    </div>
   </div>
 
-  <form id="contato-form" class="form" novalidate>
-    <div class="row two">
-      <div>
-        <label for="c-nome">Nome*</label>
-        <input id="c-nome" required type="text" />
-      </div>
-      <div>
-        <label for="c-email">E-mail*</label>
-        <input id="c-email" required type="email" />
-      </div>
-    </div>
-    <div class="row">
-      <div>
-        <label for="c-assunto">Assunto*</label>
-        <input id="c-assunto" required type="text" />
-      </div>
-    </div>
-    <div class="row">
-      <div>
-        <label for="c-msg">Mensagem*</label>
-        <textarea id="c-msg" required rows="5"></textarea>
-      </div>
-    </div>
-    <button class="btn btn-primary" type="submit">Enviar</button>
-  </form>
+  <div class="map-container">
+    <iframe 
+      title="Mapa de localização da ONG no Colégio Carpe Diem"
+      src="https://maps.google.com/maps?q=R.+Jo%C3%A3o+Ant%C3%B4nio+de+Oliveira,+1007+-+Mooca,+S%C3%A3o+Paulo+-+SP&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
 </section>
 
 </main>
