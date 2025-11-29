@@ -14,6 +14,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    /* Estilo para as imagens no topo do card */
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+      display: block;
+    }
+    .card .content {
+      padding: 1.5rem;
+    }
+  </style>
 </head>
 <body>
 <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -40,10 +53,10 @@
 
 <main id="conteudo" class="container" role="main">
   <section class="section">
-    <h2>Histórias</h2>
+    <h2>Histórias de Vida</h2>
 
-    <!-- Miguel -->
     <article class="card">
+      <img src="assets/img/miguel.jpg" alt="Foto de Miguel" class="card-img" />
       <div class="content">
         <h3>Relato de Miguel, 9 anos</h3>
         <p class="relato-teaser">Cheguei tímido, mas as músicas antigas viraram meu hobby favorito e ganhei amigos de todas as idades.</p>
@@ -55,8 +68,8 @@
       </div>
     </article>
 
-    <!-- Sr. Antônio -->
     <article class="card">
+      <img src="assets/img/sr-antonio.jpg" alt="Foto do Sr. Antônio" class="card-img" />
       <div class="content">
         <h3>Relato do Sr. Antônio, 78 anos</h3>
         <p class="relato-teaser">Depois da aposentadoria, as tardes eram longas; consertar brinquedos com as crianças me trouxe propósito de novo.</p>
@@ -68,34 +81,34 @@
       </div>
     </article>
 
-    <!-- Mário Aragão -->
     <article class="card">
+      <img src="assets/img/mario.jpg" alt="Foto de Mário Aragão" class="card-img" />
       <div class="content">
-        <h3>Relato de Mário Aragão</h3>
+        <h3>Relato de Mário Aragão, 65 anos</h3>
         <p class="relato-teaser">Entre saudades e vaidade bem cuidada, Mário procura dignidade e companhia para os dias no abrigo.</p>
         <details>
           <summary>Ver relato completo</summary>
-          <p>Sou Mário Aragão, tenho 65 anos e nasci no Piauí. Em 1972, com 19 anos, deixei minha terra natal e vim para Brasília com minha esposa e três filhos, buscando uma vida melhor. Trabalhei como operador de caixa em Samambaia até me aposentar, sempre me esforçando para garantir um futuro digno aos meus filhos.</p>
-          <p>Em 2009, depois do divórcio, meus filhos acharam melhor que eu fosse para um abrigo. No começo, recebia visitas e me sentia acompanhado, mas com o tempo elas diminuíram, e hoje convivo principalmente com médicos, cuidadores e colegas. Procuro me manter vaidoso — cabelo sempre penteado, relógio, pulseira e colar dourados —, mas sinto muita solidão e só desejo um lugar onde possa viver com dignidade, sem incomodar ninguém.</p>
+          <p>Sou Mário Aragão, tenho 65 anos e nasci no Piauí. Em 1972, com 19 anos, deixei minha terra natal e vim para Brasília com minha esposa e três filhos. Trabalhei como operador de caixa em Samambaia até me aposentar.</p>
+          <p>Em 2009, depois do divórcio, meus filhos acharam melhor que eu fosse para um abrigo. No começo, recebia visitas, mas com o tempo elas diminuíram. Procuro me manter vaidoso — cabelo sempre penteado, relógio, pulseira e colar dourados —, mas sinto muita solidão e só desejo um lugar onde possa viver com dignidade.</p>
         </details>
       </div>
     </article>
 
-    <!-- Dona Maria -->
     <article class="card">
+      <img src="assets/img/dona-maria.jpg" alt="Foto de Dona Maria" class="card-img" />
       <div class="content">
-        <h3>Relato de Dona Maria</h3>
+        <h3>Relato de Dona Maria, 98 anos</h3>
         <p class="relato-teaser">Aos 98, Dona Maria transformou sua dor em poesia e pede apenas memória e respeito.</p>
         <details>
           <summary>Ver relato completo</summary>
-          <p>Sou Dona Maria, tenho 98 anos e sou mãe de quatro filhos. Ainda sinto o “gosto de criança”, mas minha realidade é amarga: não tenho lugar na casa de nenhum dos meus filhos. Escrevi uma poesia para expressar meu lamento e minha dor, pois sinto que a velhice me tornou invisível. Sinto-me como uma estrela apagada, sem brilho, escondida num cantinho do céu que ninguém observa.</p>
-          <p>Se vocês me veem ou me ouvem, quero que saibam que meus olhos cansados já choraram muito por vocês nas noites em que vigiei. Minhas mãos, calejadas, trabalharam sem descanso para que nada faltasse a vocês. Meus pés, já cansados, percorreram longos caminhos para dar bons exemplos e ensinar com minhas atitudes. Hoje, só quero ser lembrada e respeitada, mas me sinto esquecida e sem nome, apenas “a velha”.</p>
+          <p>Sou Dona Maria, tenho 98 anos e sou mãe de quatro filhos. Ainda sinto o “gosto de criança”, mas minha realidade é amarga: não tenho lugar na casa de nenhum dos meus filhos. Escrevi uma poesia para expressar meu lamento, pois sinto que a velhice me tornou invisível.</p>
+          <p>Minhas mãos, calejadas, trabalharam sem descanso para que nada faltasse a vocês. Meus pés percorreram longos caminhos para dar bons exemplos. Hoje, só quero ser lembrada e respeitada, mas me sinto esquecida e sem nome, apenas “a velha”.</p>
         </details>
       </div>
     </article>
 
-    <!-- Dona Célia -->
     <article class="card">
+      <img src="assets/img/dona-celia.jpg" alt="Foto de Dona Célia" class="card-img" />
       <div class="content">
         <h3>Relato de Dona Célia, 73 anos</h3>
         <p class="relato-teaser">No círculo de histórias, ela voltou a crochetar, a rir e a se sentir vista.</p>
@@ -107,7 +120,173 @@
       </div>
     </article>
 
-    <!-- Vídeos -->
+    <article class="card">
+      <img src="assets/img/leonardo.jpg" alt="Foto de Leonardo" class="card-img" />
+      <div class="content">
+        <h3>Leonardo, 25 anos</h3>
+        <p class="relato-teaser">Com distrofia muscular, Leonardo viveu anos em instituições sem privacidade. Seu sonho era simples: estar perto da mãe.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Leonardo tem distrofia muscular – uma deficiência que causa fraqueza progressiva. Desde os 15 anos, morou em uma instituição de acolhimento. Sua mãe achava que não tinha escolha a não ser colocá-lo lá. “Sofri muito..., mas o Estado não me dá nenhum apoio para cuidar dele em casa”, disse ela.</p>
+          <p>Leonardo dividia um quarto com outros 24 homens e mulheres, sem sequer uma cortina para privacidade. Ele não tinha controle sobre sua vida; ficava na cama a maior parte do dia.</p>
+          <blockquote>“Eu sou colocado na cadeira de rodas de manhã, mas tenho que ser colocado de volta na cama porque... não há ninguém para me colocar de volta à noite. Sinto falta da minha casa.”</blockquote>
+          <p>Em 2017, ele voltou brevemente para casa, mas a falta de apoio especializado o obrigou a retornar para o sistema institucional.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/lady-daiane.jpg" alt="Foto de Lady Daiane" class="card-img" />
+      <div class="content">
+        <h3>Lady Daiane</h3>
+        <p class="relato-teaser">Com nome de princesa e fala mansa, ela sonha com o carinho que nunca teve.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Foi no Lar Esperança que encontramos Lady Daiane. Ela nos conta que passou a vida em um serviço de acolhimento.</p>
+          <p><strong>Repórter:</strong> Você teve contato alguma vez com alguém da sua família?<br>
+          <strong>Lady Daiane:</strong> Tive, mas faz muito tempo.<br>
+          <strong>Repórter:</strong> Você queria, sim, de repente, ter uma nova família, ser adotada?<br>
+          <strong>Lady Daiane:</strong> Queria.<br>
+          <strong>Repórter:</strong> O que você esperaria que fosse de diferente nessa nova família?<br>
+          <strong>Lady Daiane:</strong> Ah, carinho, amor. Que eu nunca tive da minha mãe.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/eudalia.jpg" alt="Foto de Dona Eudália" class="card-img" />
+      <div class="content">
+        <h3>Dona Eudália, 77 anos</h3>
+        <p class="relato-teaser">A decisão pelo asilo trouxe segurança e a alegria das oficinas de costura, apesar dos desafios da convivência.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Dona Eudália viveu muitos anos ao lado de seu irmão. Com o avanço da idade, avaliou que a opção mais adequada seria residir em um asilo para receber apoio contínuo.</p>
+          <p>Atualmente, ela demonstra satisfação, especialmente com as oficinas de costura, prática pela qual possui grande apreço. Ela observa que a convivência com muitas pessoas pode gerar desentendimentos, mas reconhece que o ambiente lhe proporciona segurança, assistência e oportunidades de socialização.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/eulice.jpg" alt="Foto de Dona Eulice" class="card-img" />
+      <div class="content">
+        <h3>Dona Eulice</h3>
+        <p class="relato-teaser">Mesmo com conforto em casa, ela sentia falta de gente. No lar, encontrou uma nova família.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Dona Eulice residia com seu filho e tinha todas as necessidades materiais atendidas, mas sentia falta de convivência com pessoas de sua idade. Para evitar dar trabalho ao filho e suprir essa carência, procurou um lar para idosos.</p>
+          <p>“Gostei muito daqui. Aqui é muito bom, aqui é uma família, e me tratam muito bem”, diz ela. Para Dona Eulice, o lar representa segurança, companhia e bem-estar.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/enila.jpg" alt="Foto de Enila" class="card-img" />
+      <div class="content">
+        <h3>Enila e Ana</h3>
+        <p class="relato-teaser">O dilema do cuidado: quando a institucionalização se torna um ato de amor e preservação.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Enila foi diagnosticada com uma doença degenerativa. Sua filha, Ana, tornou-se a principal cuidadora e acabou desenvolvendo depressão com a carga de responsabilidade. Percebeu que a única alternativa saudável seria uma Instituição de Longa Permanência (ILPI).</p>
+          <p>Apesar da culpa inicial, Ana compreendeu que manter a mãe em casa prejudicava ambas. Especialistas reforçam: as ILPIs não são apenas para quem não tem família; os parentes podem e devem continuar presentes com visitas e amor.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/yara.jpg" alt="Foto de Dona Yara" class="card-img" />
+      <div class="content">
+        <h3>Dona Yara, 100 anos</h3>
+        <p class="relato-teaser">Independente até os 97 anos, ela escolheu o conforto e a segurança de uma casa de repouso.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Dona Yara, prestes a completar 100 anos, vive em uma casa de repouso em Belo Horizonte. Solteira e sem filhos, morou sozinha até os 97, quando tarefas simples ficaram difíceis.</p>
+          <p>Optou então por se mudar, onde hoje vive com conforto e apoio das cuidadoras. Para muitos idosos, essas instituições também representam proteção contra a violência patrimonial e o abandono.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/neuza.jpg" alt="Foto de Dona Neuza" class="card-img" />
+      <div class="content">
+        <h3>Dona Neuza, 80 anos</h3>
+        <p class="relato-teaser">Sem noção do tempo, ela encontra no lar o cuidado contínuo que necessita.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Dona Neuza vive em uma casa de repouso. Ela já não sabe sua idade ao certo, perdeu a noção do tempo e demonstra desinteresse por seus bens e rotina. A instituição se tornou o local vital onde recebe os cuidados contínuos que garantem sua dignidade.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/odete.jpg" alt="Foto de Odete Ferreira" class="card-img" />
+      <div class="content">
+        <h3>Odete Ferreira, 77 anos</h3>
+        <p class="relato-teaser">Ex-babá que cuidou de tantos, hoje brinca com as bonecas que não teve na infância.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Odete adora bonecas, brinquedo que nunca teve na infância. Trabalhou em regime análogo à escravidão quando menina, foi babá e doméstica. Cuidou de muitos, mas hoje diz: “Só tenho Deus”.</p>
+          <p>No abrigo, ela consola as colegas que choram pela ausência dos filhos: “Falo para ela: 'Calma, está trabalhando, logo ele aparece'”.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/casal.jpg" alt="Foto de Felisa e Alberto" class="card-img" />
+      <div class="content">
+        <h3>Felisa (81) e Alberto (82)</h3>
+        <p class="relato-teaser">O amor na terceira idade: um casamento que afasta a solidão dentro do asilo.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Felisa Pajón se casou há sete anos com o português Alberto da Costa, e o casal vive junto no asilo.</p>
+          <p>“Somos muito bem tratados, mas é gostoso ter alguém para conversar, contar nossas histórias de vida. Assim não bate a solidão”, diz Felisa.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/joao.jpg" alt="Foto de João" class="card-img" />
+      <div class="content">
+        <h3>João, 89 anos (In Memoriam)</h3>
+        <p class="relato-teaser">O sorriso e a gratidão de um antigo agricultor que marcou a todos no abrigo.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>João viveu seus últimos anos em um abrigo, onde era muito querido. Mesmo com pouca família, mantinha sempre um sorriso e contava histórias de quando era agricultor.</p>
+          <p>Quando sua saúde enfraqueceu, contou com o carinho dos cuidadores. João faleceu tranquilamente, deixando lembranças de bondade, simplicidade e gratidão.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/alice.jpg" alt="Foto de Alice" class="card-img" />
+      <div class="content">
+        <h3>Alice, 3 anos</h3>
+        <p class="relato-teaser">Do acolhimento institucional à reintegração familiar: a superação de uma pequena guerreira.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Aos 2 anos, Alice vivia em situação de rua e foi acolhida institucionalmente. Expressava seu sofrimento através de crises intensas, mas iniciou atendimento psicoterapêutico no Projeto Com Tato, aprendendo a nomear seus sentimentos.</p>
+          <p>Paralelamente, houve um trabalho de reaproximação com sua família. Hoje, Alice vive com uma tia-avó, mantém contato seguro com os pais e demonstra um desenvolvimento saudável.</p>
+        </details>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/img/jovina.jpg" alt="Foto de Dona Jovina" class="card-img" />
+      <div class="content">
+        <h3>Dona Jovina</h3>
+        <p class="relato-teaser">Um ano de lar e uma pergunta simples que revela a maior saudade de todas.</p>
+        <details>
+          <summary>Ver relato completo</summary>
+          <p>Dona Jovina mora no Lar dos Velhinhos há um ano. Ela sente na pele a dor da distância de sua única filha.</p>
+          <p>— Qual presente a senhora gostaria de ganhar de sua filha no Dia das Mães?<br>
+          — Eu nem sei, acredita?<br>
+          — A presença dela?<br>
+          — É.<br>
+          — A senhora sente saudade de sua filha?<br>
+          — Eu sinto.</p>
+        </details>
+      </div>
+    </article>
+
     <h2 style="margin-top:28px;">Vídeos</h2>
     <div class="video-grid">
       <figure class="card">
